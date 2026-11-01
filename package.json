@@ -1,0 +1,49 @@
+{
+  "name": "dsh-code-intel",
+  "version": "0.1.0",
+  "description": "Read-only semantic code navigation for DeepSeek Harness via local language servers: definitions, references, workspace symbols, and diagnostics.",
+  "type": "module",
+  "exports": {
+    ".": "./plugin/index.js",
+    "./lsp": "./src/lsp.mjs",
+    "./servers": "./src/servers.mjs",
+    "./plugin": "./plugin/index.js",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "plugin",
+    "src",
+    "skills",
+    "icon.svg",
+    "README.md",
+    "NOTICE.md",
+    "docs",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./plugin/cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "lsp",
+    "code-intelligence",
+    "serena",
+    "symbols",
+    "references",
+    "diagnostics"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lengrufeng2008/dsh-code-intel"
+  }
+}
