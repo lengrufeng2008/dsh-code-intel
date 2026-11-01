@@ -59,7 +59,8 @@ Positions are 1-based. `root` defaults to the DSH workspace directory; files out
 ## Real-server smoke
 
 With `typescript@5.9.3` and `typescript-language-server@5.3.0`, definition and references were
-smoke-tested against a small `.ts` file (1 definition, 2 references). `code_symbols` needs a project
+smoke-tested against a small `.ts` file (1 definition, 2 references). The Python path was also
+smoke-tested with `pyright-langserver` (1 definition, 2 references). `code_symbols` needs a project
 context; for TypeScript, add a `tsconfig.json` and/or pass `file` so the server opens a project
 file first, or it may answer `No Project`. The bundled
 fake server keeps `npm test` independent of installed language servers.
