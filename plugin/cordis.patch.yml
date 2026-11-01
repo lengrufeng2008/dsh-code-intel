@@ -1,0 +1,4 @@
+- insert:
+    - id: code-intel
+      name: dsh-code-intel
+      config: {}
